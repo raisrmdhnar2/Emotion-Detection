@@ -33,7 +33,7 @@ class AnimalCNN(nn.Module):
 # --- Load model ---
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = AnimalCNN().to(device)
-model.load_state_dict(torch.load("c:/Users/ADMIN/Documents/Learn/Emotion Detection/best_model.pth", map_location=device))
+model.load_state_dict(torch.load("best_model.pth", map_location=device))
 model.eval()
 
 # --- Kelas ---
